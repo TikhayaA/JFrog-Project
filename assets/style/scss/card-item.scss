@@ -1,0 +1,615 @@
+.card-item{
+    border-radius: 15px;
+    background: $blackCard;
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    box-sizing: border-box;
+    cursor: pointer;
+    z-index: 1;
+    margin-bottom: 40px;
+    @media screen and (max-width: 500px){
+        margin-bottom: 14px;
+        border-radius: 6px;
+        -webkit-border-radius: 6px;
+        -moz-border-radius: 6px;
+        -ms-border-radius: 6px;
+        -o-border-radius: 6px;
+}
+    &:hover{
+        background: linear-gradient(180deg, rgba(132, 132, 132, 0.2) 0%, rgba(255, 255, 255, 0) 100%), #272727;
+    }
+    &__main-text{
+        font-style: normal;
+        font-weight: 600;
+        font-size: 32px;
+        line-height: 150%;
+        @media screen and (max-width: 500px){
+            font-size: 14px;
+        }
+    }
+    &__title{
+        font-style: normal;
+        font-weight: 600;
+        font-size: 32px;
+        line-height: 150%;
+        color: $colormain;
+        @media screen and (max-width: 500px){
+            font-size: 14px;
+        }
+    }
+    &__pos-icon{
+        position: absolute;
+        top: 50%;
+        right: 65px;
+        transform: translate(0, -50%);
+        -webkit-transform: translate(0, -50%);
+        -moz-transform: translate(0, -50%);
+        -ms-transform: translate(0, -50%);
+        -o-transform: translate(0, -50%);
+        @media screen and (max-width: 1100px){
+            width: 6px;
+        }
+        @media screen and (max-width: 500px){
+            right: 20px;
+        }
+    }
+}
+.card-vacancies{
+    width: 100%;
+    padding: 44px 70px 54px 34px;
+    height: 236px;
+    box-sizing: border-box;
+    @media screen and (max-width: 500px){
+        padding: 22px 23px 22px 3px;
+        height: 116px;
+    }
+    &__block{
+        display: flex;
+        flex-direction: column;
+        align-items: baseline;
+        color: $gray;
+        margin-left: 26px;
+        @media screen and (max-width: 500px){
+            margin-left: 3px;
+        }
+    }
+    &__icon{
+        margin-right: 10px;
+        @media screen and (max-width: 500px){
+            margin-right: 8px;
+        }
+    }
+    &__logo{
+        display: flex;
+        width: 17%;
+        justify-content: center;
+        align-items: center;
+        @media screen and (max-width: 900px){
+           width: 20%;
+        }
+        @media screen and (max-width: 500px){
+            width: 30%;
+         }
+        img{
+            @media screen and (max-width: 500px){
+                width: 56px;
+            }
+             @media screen and (max-width: 300px){
+                width: 46px;
+            }
+        }
+    }
+    .card-item__title{
+        margin: 10px 0 13px;
+        @media screen and (max-width: 500px){
+            margin: 6px 0;
+        }
+    }
+    &__hot{
+        display: flex;
+        padding: 3px 8px;
+        border: 1px solid #F1F1F1;
+        color: $red;
+        text-transform: uppercase;
+        border-radius: 4px;
+        -webkit-border-radius: 4px;
+        -moz-border-radius: 4px;
+        -ms-border-radius: 4px;
+        -o-border-radius: 4px;
+        @media screen and (max-width: 500px){
+            font-style: normal;
+            font-weight: 300;
+            font-size: 10px;
+            line-height: 13px;
+            border-radius: 2px;
+            -webkit-border-radius: 2px;
+            -moz-border-radius: 2px;
+            -ms-border-radius: 2px;
+            -o-border-radius: 2px;
+            padding: 3px 6px;
+        }
+        >img{
+            @media screen and (max-width: 500px){
+                width: 9px;
+                height: 11px;
+            }
+        }
+    }
+}
+.card-education{
+    padding: 36px 90px 27px 82px;
+    height: 233px;
+    @media screen and (max-width: 1200px){
+        margin-bottom: 20px;
+    }
+    @media screen and (max-width: 1100px){
+        padding: 30px;
+        flex-direction: column;
+        height: fit-content;
+    }
+    @media screen and (max-width: 500px){
+        padding: 20px 18px 16px 16px;
+        margin-bottom: 14px;
+    }
+    .card-vacancies__logo{
+        width: 35%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin-right: 59px;
+        @media screen and (max-width: 1100px){
+            width: fit-content;
+            margin-right: 15px;
+            align-items: flex-start;
+        }
+        >img{
+            width: 172px;
+            @media screen and (max-width: 1100px){
+                width: 130px;
+            }
+            @media screen and (max-width: 500px){
+                width: 109px;
+            }
+        }
+    }
+    .text-middle{
+        margin-top: 11px;
+        color: $gray;
+        font-weight: 600;
+        @media screen and (max-width: 1100px){
+            font-size: 13px;
+        }
+        @media screen and (max-width: 500px){
+            margin-top: 7px;
+            font-weight: 500;
+        }
+    }
+    .card-vacancies__block{
+        justify-content: space-between;
+        @media screen and (max-width: 1100px){
+            margin: 17px 0 0 0;
+        }
+    }
+    &__info{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        @media screen and (max-width: 1100px){
+            margin-top: 21px;
+        }
+        :nth-child(3){
+            position: relative;
+            &:after, &:before{
+                position: absolute;
+                content: "";
+                width: 1px;
+                height: 18px;
+                background: $gray;
+                top: 50%;
+                transform: translate(0, -50%);
+                -webkit-transform: translate(0, -50%);
+                -moz-transform: translate(0, -50%);
+                -ms-transform: translate(0, -50%);
+                -o-transform: translate(0, -50%);
+            }
+            &:after{
+                left: -22px;
+                @media screen and (max-width: 500px){
+                    left: -10px;
+                }
+            }
+            &:before{
+                right: -22px;
+                @media screen and (max-width: 500px){
+                    right: -10px;
+                }
+            }
+        }
+    }
+    &__text{
+        color: $colormain;
+        font-weight: normal;
+        @media screen and (max-width: 500px){
+           height: 51px;
+           overflow: hidden;
+           display: -webkit-box;
+           -webkit-line-clamp: 3;
+           -webkit-box-orient: vertical;
+        }
+    }
+    .text-small{
+        margin-right: 41px;
+        @media screen and (max-width: 500px){
+            margin-right: 20px;
+            font-weight: 400;
+            font-size: 12px;
+        }
+        @media screen and (max-width: 350px){
+            font-size: 9px;
+        }
+    }
+    .card-education__status{
+        color: $colormain;
+        padding: 6px 0px ;
+        border: 2px dashed $colormain;
+        border-radius: 4px;
+        -webkit-border-radius: 4px;
+        -moz-border-radius: 4px;
+        -ms-border-radius: 4px;
+        -o-border-radius: 4px;
+        margin-right: 98px;
+        width: 150px;
+        text-align: center;
+        box-sizing: border-box;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 150%;
+        @media screen and (max-width: 1100px){
+           position: absolute;
+           top: 20px;
+           right: 18px;
+           margin: 0;
+        }
+        @media screen and (max-width: 500px){
+            font-size: 14px;
+            width: 120px;
+        }
+        @media screen and (max-width: 350px){
+            width: 100px;
+            font-size: 10px;
+        }
+        &_completed{
+            border: 1px solid $colormain;
+            width: 166px;
+            margin-right: 82px;
+            @media screen and (max-width: 1100px){
+                margin: 0;
+             }
+             @media screen and (max-width: 500px){
+                width: 154px;
+            }
+            @media screen and (max-width: 350px){
+                width: 110px;
+            }
+        }
+    }
+    .card-item__pos-icon{
+        top: unset;
+        bottom: 27px;
+        right: 39px;
+        @media screen and (max-width: 1100px){
+            bottom: 15px;
+        }
+    }
+    .title-description{
+        font-style: normal;
+        font-weight: 600;
+        font-size: 22px;
+        line-height: 150%;
+    }
+}
+.card-wrap{
+    margin-top: 50px;
+    @media screen and (max-width: 500px){
+        margin-top: 24px;
+    }
+}
+.card-item-news{
+    margin-bottom: 24px;
+    justify-content: space-between;
+    &__content{
+        position: relative;
+    }
+    &__content{
+        padding: 20px 30px 21px 24px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        width: 54%;
+        @media screen and (max-width: 767px){
+            padding: 20px 10px 21px 24px;
+        }
+        @media screen and (max-width: 500px){
+            padding: 10px 15px 12px 12px;
+            width: 63%;
+        }
+    }
+    .card-item__pos-icon{
+        bottom: 9px;
+        right: 50px;
+        top: unset;
+        bottom:9px;
+        @media screen and (max-width: 1100px){
+            bottom: 26px;
+        }
+        @media screen and (max-width: 500px){
+            bottom: 10px;
+            right: 20px;
+        }
+    }
+    .card-item__title {
+        @media screen and (max-width: 1300px){
+            font-size: 30px;
+        }
+        @media screen and (max-width: 767px){
+            font-size: 26px;
+        }
+        @media screen and (max-width: 600px){
+            font-size: 22px;
+        }
+        @media screen and (max-width: 500px){
+            font-size: 14px;
+        }
+        @media screen and (max-width: 300px){
+            font-size: 12px;
+        }
+    }
+    &__description{
+        width: 87%;
+        overflow: hidden;
+        display: -webkit-box;
+        -webkit-line-clamp: 5;
+        -webkit-box-orient: vertical;
+        font-weight: normal;
+        @media screen and (max-width: 1730px){
+            width: 95%;
+        }
+        @media screen and (max-width: 600px){
+            -webkit-line-clamp: 2;
+            width: 100%;
+
+        }
+    }
+    &__img{
+        width: fit-content;
+        min-width: 116px;
+        max-width: 300px;
+        @media screen and (max-width: 500px){
+            width: 36%;
+        }
+        img{
+            border-top-right-radius: 15px;
+            border-bottom-right-radius: 15px;
+            width: 100%;
+        }
+        
+    }
+    &__date{
+        @media screen and (min-width: 1100px) and (max-width: 1300px){
+           margin-top: 10px;
+        }
+        @media screen and (max-width: 500px){
+            margin-top: 10px;
+         }
+    }
+}
+.card-interview{
+    width: calc(50% - 20px);
+    padding: 30px 36px 37px 28px;
+    flex-direction: column;
+    @media screen and (max-width: 1100px){
+        width: calc(50% - 10px);
+    }
+    @media screen and (max-width: 767px){
+        width: 75%;
+    }
+    @media screen and (max-width: 550px){
+        padding: 18px 16px 17px;
+        width: 100%;
+    }
+    &__img-person{
+        width: 42px;
+        height: 42px;
+        overflow: hidden;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 50%;
+        -webkit-border-radius: 50%;
+        -moz-border-radius: 50%;
+        -ms-border-radius: 50%;
+        -o-border-radius: 50%;
+        margin-right: 14px;
+
+    }
+    &__info-wrap{
+        display: flex;
+        flex-direction: row;
+        margin: 14px 0 20px;
+        align-items: center;
+        color: $gray;
+        font-style: normal;
+        font-weight: 500;
+        justify-content: space-between;
+    }
+    &__person-wrap{
+        display: flex;
+    }
+    &__wrap-time{
+        align-self: baseline;
+    }
+    &__name{
+        font-size: 18px;
+        line-height: 150%;
+        @media screen and (max-width: 1000px){
+            font-weight: 500;
+            font-size: 14px;
+        }
+    }
+    &__position{
+        font-size: 16px;
+        line-height: 150%;
+        @media screen and (max-width: 1000px){
+            font-weight: normal;
+            font-size: 14px;
+        }
+    }
+    .card-interview__wrap-time{
+        @media screen and (max-width: 1000px){
+            font-weight: normal;
+            font-size: 12px;
+            line-height: 15px;
+        }
+    }
+    .card-item-news__description{
+        width: 75%;
+        @media screen and (max-width: 1000px){
+            font-weight: normal;
+            font-size: 14px;
+            line-height: 17px;
+            width: 90%;
+        }
+        @media screen and (max-width: 550px){
+            -webkit-line-clamp: 5;
+        }
+    }
+    .card-item__title{
+        @media screen and (max-width: 1000px){
+            font-weight: 600;
+            font-size: 14px;
+        }
+    }
+    .card-item__pos-icon{
+        top: unset;
+        bottom: 36px;
+        right: 52px;
+        @media screen and (max-width: 1000px){
+            bottom: 16px;
+            right: 25px;
+        }
+    }
+}
+.card-reviews{
+    height: fit-content;
+    border-radius: 15px;
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
+    -ms-border-radius: 15px;
+    -o-border-radius: 15px;
+    &__img{
+        width: fit-content;
+        min-width: 124px;
+        max-width: 638px;
+        img{
+            width: 100%;
+            border-top-left-radius: 15px;
+            border-bottom-left-radius: 15px;
+        }
+        @media screen and (max-width: 1000px){
+           width: 40%;
+        }
+        @media screen and (max-width: 900px){
+            width: 42%;
+         }
+        @media screen and (max-width: 400px){
+            width: 41%;
+         }
+         @media screen and (max-width: 360px){
+            width: 42%;
+         }
+         @media screen and (max-width: 350px){
+            width: 43%;
+         }
+         @media screen and (max-width: 300px){
+            width: 45%;
+         }
+         @media screen and (max-width: 295px){
+            width: 67%;
+         }
+    }
+    &__content{
+        width:48%;
+        padding: 65px 40px 20px 106px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        @media screen and (max-width: 1100px){
+            padding: 0px 30px 20px 66px;
+        }
+        @media screen and (max-width: 767px){
+            padding: 9px 12px 9px 12px;
+        }
+        @media screen and (max-width: 767px){
+            padding: 3px 12px 3px 12px;
+        }
+    }
+    &__position{
+        font-weight: normal;
+        @media screen and (max-width: 767px){
+            font-weight: normal;
+            font-size: 11px;
+            line-height: 17px;
+            width: 90%;
+        }
+        @media screen and (max-width: 350px){
+            font-size: 10px;
+            line-height: 13px;
+        }
+    }
+    .card-item__pos-icon{
+        position: static;
+        transform: none;
+        -webkit-transform: none;
+        -moz-transform: none;
+        -ms-transform: none;
+        -o-transform: none;
+}
+    .card-item__title{
+        margin-bottom: 17px;
+        @media screen and (max-width: 767px){
+            font-weight: 600;
+            font-size: 12px;
+            margin-bottom: 7px;
+        }
+    }
+    &__wrap-date{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        padding-top: 80px; 
+        @media screen and (max-width: 950px){
+            padding-top: 25px; 
+        }
+        @media screen and (max-width: 767px){
+            padding-top: 37px;
+        }
+        @media screen and (max-width: 500px){
+            padding-top: 7px;
+        }
+    }
+    
+    .card-reviews__date{
+        @media screen and (max-width: 767px){
+            font-weight: normal;
+            font-size: 10px;
+            line-height: 13px;
+        }
+        @media screen and (max-width: 350px){
+            font-size: 9px;
+            line-height: 12px;
+        }
+    }
+}

@@ -1,0 +1,55 @@
+.btn{
+    border: 1px solid #F1F1F1;
+    background: #1C1C1C;
+    box-sizing: border-box;
+    border-radius: 6px;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 150%;
+    text-align: center;
+    text-transform: uppercase;
+    padding: 16px 0;
+    width: 288px;
+    color: $colormain;
+    font-family: 'Montserrat', sans-serif;
+    display: flex;
+    justify-content: center;
+    margin: auto;
+    @media screen and (max-width: 500px){
+        padding: 11px 0;
+        font-size: 14px;
+        line-height: 21px;
+        width: 80%;
+        text-transform: none;
+    }
+    @media screen and (max-width: 400px){
+        width: 100%;
+    }
+    &[disabled]{
+        background: linear-gradient(101.36deg, #292929 -6.72%, rgba(28, 28, 28, 0) 150.52%), #1C1C1C;
+        border: 1px solid #525252;
+        color: $gray;
+        &:hover{
+            background: linear-gradient(101.36deg, #292929 -6.72%, rgba(28, 28, 28, 0) 150.52%), #1C1C1C;
+        }
+    }
+    &:hover{
+        background: linear-gradient(101.36deg, #383838 -6.72%, rgba(28, 28, 28, 0) 150.52%), #1C1C1C;
+    }
+    &:active{
+        background: linear-gradient(100.91deg, #530000 -88.55%, rgba(28, 28, 28, 0) 149.18%), #1C1C1C;
+    }
+    &_small{
+        width: 236px;
+        @media screen and (max-width: 500px){
+            width: 100%;
+        }
+    }
+    &_big{
+        width: 368px;
+        @media screen and (max-width: 500px){
+            width: 100%;
+        }
+    }
+}

@@ -1,0 +1,99 @@
+.banner-vacancy{
+    background: #272727;
+    border-radius: 5px;
+    max-width: 1384px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    height: 231px;
+    margin: auto;
+    position: relative;
+    margin-bottom: 16px;
+    z-index: 1;
+    overflow: hidden;
+    @media screen and (max-width: 767px){
+       flex-direction: column;
+       height: fit-content; 
+       padding: 35px 0 31px;
+    }
+    @media screen and (max-width: 500px){
+        max-width: unset;
+        width: 95%;
+    }
+    &__wrap-description{
+        width: 40%;
+        @media screen and (max-width: 767px){
+            width: fit-content;
+         }
+         >:nth-child(1){
+            @media screen and (max-width: 767px){
+                font-weight: 600;
+            }
+         }
+         >:nth-child(2){
+            @media screen and (max-width: 767px){
+                font-weight: normal;
+            }
+         }
+    }
+    .btn.btn_cv{
+        background: transparent;
+        margin: 0;
+        @media screen and (max-width: 767px){
+            margin-top: 20px;
+        }
+        @media screen and (max-width: 400px){
+            width: 90%;
+        }
+    }
+    .text-small{
+        margin-top: 10px;
+        @media screen and (max-width: 1730px){
+            margin-top: 6px;
+        }
+    }
+    .pos-img-wrap{
+        img{
+            z-index: -1;
+        }
+        :nth-child(1){
+            top: 3%;
+            left: 10%;
+            @media screen and (max-width: 767px){
+               display: none;
+             }
+        }
+        :nth-child(2){
+            bottom: 3%;
+            left: 3%;
+            @media screen and (max-width: 767px){
+                bottom: -33%;
+                left: 3%;
+            }
+            @media screen and (max-width: 500px){
+                right: -20%;
+            }
+        }
+        :nth-child(3){
+            top: 1%;
+            right: 6%;
+            @media screen and (max-width: 767px){
+                top: -35%;
+                right: -2%;
+            }
+            @media screen and (max-width: 500px){
+                top: -34%;
+                right: -22%;
+            }
+        }
+        :nth-child(4){
+            bottom: 5%;
+            right:  1%;
+            @media screen and (max-width: 767px){
+                display: none;
+            }
+        }
+    }
+
+}
